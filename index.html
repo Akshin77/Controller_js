@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ControlByJs</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-9 col-lg-9">
+                <div class="row">
+                    <div class="tester">
+                        <div id="mydiv">
+                            <p id="mytext"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="row">
+                    <div class="controller">
+                        <div class="main_div">
+                            <div class="logo">
+                                <p>Controller</p>
+                            </div>
+                           <div class="menu">
+                            <ul class="nav nav-tabs  nav-justified">
+                                <li class="active"><a data-toggle="pill" href="#home">Inputs</a></li>
+                                <li><a data-toggle="pill" href="#menu1">Select</a></li>
+                                <li><a data-toggle="pill" href="#menu2">Image</a></li>
+                                <li><a data-toggle="pill" href="#menu3">Other</a></li>
+                              </ul>
+                              
+                              <div class="tab-content">
+                                <div id="home" class="tab-pane fade in active">
+                                  <h3>INPUTS</h3>
+                                    <input type="text" id="width" placeholder="enter width">
+                                    <br><br>
+                                    <input type="text" id="height" placeholder="enter height">
+                                    <br><br>
+                                    <input type="text" id="border" placeholder="enter border">
+                                    <br><br>
+                                    <input type="text" id="radius" placeholder="enter border-radius">
+                                    <br><br>
+                                    <input type="text" id="shadow" placeholder="enter box-shadow">
+                                    <br><br>
+                                    <input type="text" id="inform" placeholder="enter data ... ...">
+                                    <br><br>
+                                </div>
+                                <div id="menu1" class="tab-pane fade">
+                                  <h3>SELECT</h3>
+                                  <select name="" id="bg" style="margin-right: 20px;">
+                                    <option value="">-Select-</option>
+                                    <option value="red">Red</option>
+                                    <option value="green">Green</option>
+                                    <option value="blue">Blue</option>
+                                </select>
+                               
+                                <select name="" id="position">
+                                    <option value="">-Position-</option>
+                                    <option value="static">Static</option>
+                                    <option value="relative">Relative</option>
+                                    <option value="absolute">Absolute</option>
+                                    <option value="fixed">Fixed</option>
+                                    <option value="sticky">Sticky</option>
+                                </select>
+                                <br><br>
+                                <input type="text" id="top" placeholder="top">
+                                <br><br>
+                                <input type="text" id="left" placeholder="left">
+                                <br><br>
+                                </div>
+                                <div id="menu2" class="tab-pane fade">
+                                  <h3>IMG</h3>
+                                  <input type="text" id="bgImg">
+                                <br><br>
+                                </div>
+                                <div id="menu3" class="tab-pane fade">
+                                  <h3>Soon</h3>
+                                  
+                                </div>
+                              </div>
+    
+                           </div>
+                        </div>
+                        <button type="button" onclick="control1()" class="btn btn-success btn-block mybtn">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./js/main.js"></script>

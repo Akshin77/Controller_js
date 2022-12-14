@@ -1,0 +1,62 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.tester{
+    width: 100%;
+    height: 100vh;
+    float: left;
+    /* background-color: green; */
+}
+#mydiv{
+    width: 200px;
+    height: 200px;
+    float: left;
+    background: purple;
+    transition: .5s;
+
+}
+
+.controller{
+    width: 100%;
+    height: 100vh;
+    float: left;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.logo{
+    width: 100%;
+    float: left;
+    height: 70px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo p{
+    margin: 0px;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.menu{
+    width: 100%;
+    
+}
+
+.menu_btn{
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mybtn{
+    height: 50px;
+}
